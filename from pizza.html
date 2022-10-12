@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>from pemesanan pizza </title>
+</head>
+<body>
+    <h1> Black Goose bistro | pizza-on-demand</h1>
+    <p>Qur 12' wood-fired pizzas are available for delevery.build your custum pizza and wee''l delivery it within an hour.</p>
+    <hr>
+
+    <from action="hasil-prom pizza.html">
+
+    <fieldset>
+        <legend>data customer</legend>
+        <table>
+            <!-- buat baris isi judul -->
+            <thead>
+                <tr>
+                    <!-- 2 kolom di jadiin 1 -->
+                    <th colspan="2">your information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- buat 5 baris isi konten -->
+            <tr>
+                <!-- buat 2 kolom -->
+                <td>
+                  <label for="name">name:</label>
+                </td>
+                <td>
+                    <!-- inputan -->
+                    <input type="text" id="name">
+                </td>
+            </tr>
+            <tr>
+                <!-- buat adress -->
+                <td>
+                    <label for="address">address:</label>
+                </td>
+                <td>
+                    <!-- inputan -->
+                    <input type="text" id="address">
+                </td>
+            </tr>
+            <tr>
+                <!-- buat telepon number -->
+                <td>
+                    <label for="telepon number ">telepon number:</label>
+                </td>
+                <td>
+                    <input type="number" id="telepon number">
+                </td>
+            </tr>
+            <tr>
+                <!-- buat email -->
+                <td>
+                 <label for="email"> Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email">
+                </td>
+            </tr>
+
+            <!-- buat intruksi -->
+            <tr>
+            <td>
+                <label for="decsription">delivery instrukctions:</label>
+            </td>
+            <td>
+                <!-- inputan -->
+                <textarea id="decsription"></textarea>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <!-- buat list pemilihan pizza -->
+    <fieldset>
+        <legend>Desigh your dream pizza</legend>
+        <h4>crust(choose one):</h4>
+        <!-- buat list -->
+        <ul>
+            <!-- jenis classic white -->
+            <li>
+                <input type="radio" id="white" name="crust">
+                <label for="white"> calassic white</label>
+            </li>
+            <!-- jenis multigrain -->
+            <li>
+                <input type="radio" id="multigrain" name="crust">
+                <label for="multigrain">multigrain</label>
+            </li>
+            <!-- jenis una melt -->
+            <li>
+                <input type="radio" id="una" name="crust">
+                <label for="una melt">una melt</label>
+            </li>
+            <!-- jenis gluten-free -->
+            <li>
+                <input type="radio" id="gluten free" name="crust"> 
+                <label for="gluten free">gluten free</label>
+            </li>
+        </ul>
+        <!-- toping pizza -->
+        <ul>
+         <li>
+            <input type="checkbox" id="red sauce">
+            <label for="red sause">red sauce</label>
+         </li>
+         <li>
+            <input type="checkbox" id="white sauce">
+            <label for="white sauce">white sauce</label>
+         </li>
+         <li>
+            <input type="checkbox" id="mozzarella cheese">
+            <label for="mozzarella cheesee">mozzarella cheese</label>
+         </li>
+         <li>
+            <input type="checkbox" id="pepperonie">
+            <label for="pepperonie">pepperonie</label>
+         </li>
+         <li>
+            <input type="checkbox" id="mushrooms">
+            <label for="mushrooms">mushrooms</label>
+         </li>
+         <li>
+            <input type="checkbox" id="peppers">
+            <label for="peppers">peppers</label>
+         </li>
+         <li>
+            <input type="checkbox" id="anchovies">
+            <label for="anchovies">anchovies</label>
+         </li>
+         </ul>
+         <!-- berapa pizza  -->
+         <h4> number </h4>
+         <label for="count"> how manny pizzas:</label>
+         <input type="number" id="count">
+         <!-- baris baru -->
+         <br><br>
+         <!-- buat tombol kirim reset  -->
+         <button type="submit">bring me a pizza</button>
+         <!-- buat resset -->
+         <button type="reset">resset</button>
+    </fieldset>
+     </from>
+</body>
+</html>
