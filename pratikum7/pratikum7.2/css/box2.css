@@ -1,0 +1,12 @@
+.koleksi {
+    background-color: lightyellow;
+    display: flex;
+    padding: 20px;
+    /* untuk membuat garis baru atau jarak */
+    flex-wrap: wrap; 
+    /* jarak di setiap konten */
+    justify-content: space-evenly;
+}
+.koleksi img {
+    width: 200px;
+}
