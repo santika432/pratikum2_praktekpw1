@@ -1,0 +1,38 @@
+#atas{
+    border: 1px solid black; 
+    width: 100%;
+    background-color: green;
+    height: 120px;
+    margin: 10px;
+}
+
+#tengah{
+    display: flex;
+    justify-content: space-evenly;
+}
+.kuning{
+    border: 1px solid black;
+    width:20% ;
+    height: 200px;
+    background-color: yellow;
+    margin-bottom: 30px;
+}
+.orange{
+    border: 1px solid black;
+    width: 78%;
+    height: 200px;
+    background-color: orange;
+}
+
+#bawah{
+    display: flex;
+    justify-content: space-evenly;
+}
+.biru{
+    border: 1px solid black;
+    width: 78%;
+    height: 200px;
+    background-color:blue;
+}
+
+
