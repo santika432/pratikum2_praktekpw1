@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratikum 9.1</title>
+ </head>
+ <body>
+    <h1>menghitung luas dan keliling lingkaran</h1>
+
+    <!-- buat tag kosong -->
+    <span id="phi"></span>
+    <br>
+    <span id="jari"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span>
+
+    <!-- kode javascript -->
+    <script>
+      // variabel konstan
+      const phi = 3.14;
+
+      // buat variabel jari jari
+      let r = 14;
+      
+      // luas lingkaran
+      let L = phi *(r*r);
+
+      // variabel keliling
+
+      let K = phi*(2*r);
+
+      // tangkap elemen dengan id pi, lalu masukan kontenya 
+      document.getElementById("phi").innerHTML ="phi : " + phi;
+      // tangkap elemen dengan id jari, lalu masukan kontenya 
+      document.getElementById("jari").innerHTML="jari :"+ r;
+      // tangkap elemen dengan id luas, lalu masukan kontenya 
+      document.getElementById("luas").innerHTML="luas:"+ L;
+      // tangkap elemen dengan id keliling , lalu masukan kontenya 
+      document.getElementById("keliling").innerHTML="keliling:"+ K;
+
+
+    </script>
+ </body>
+ </html>
