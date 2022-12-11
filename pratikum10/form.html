@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>from</title>
+</head>
+<style>
+
+
+    #container {
+        text-align: center;
+        margin: 20px auto;
+        border: 1px solid black;
+        max-height: 700px;
+        margin: 5px;
+        width: 400px ;
+    } 
+    
+  
+
+    #boxhasil {
+        text-align: center;
+        margin: 20px auto;
+        border: 1px solid black;
+        height: 700 px;
+        margin: 5px;
+        width: 400px ;
+    
+    }
+
+   
+</style>
+<body>
+    <div id="froom">
+        <form action="">
+            <div id="container" >
+                <h1>form</h1>
+                Nama pelanggan <br><input type="text" name="nama " id="nama" required>
+                <br>
+                Email pelanggan <br> <input type="text" name="email" id="email" required>
+                <br>
+                Jam keberangkatan <br> <input type="time" id="jam" name="appt" max="00:00" required>
+         
+                <br>
+                Tujuan keberangkatan <br> <input type="text" id="tujuan" required>
+                <br>
+                Jumlah tiket <br> <input type="text" id="tiket" required>
+                <br>
+                <br>
+                <input type="button" value="Kirim"  onclick="data()" style="background-color:aqua ;">
+            </div>
+        </form>
+        <div id="boxhasil">
+            <p id="h_nama"></p>
+            <p id="h_email"></p>
+            <p id="h_jam"></p>
+            <p id="h_tujuan"></p>
+            <p id="h_tiket"></p>
+        </div>
+    </div>
+    <script>
+        let n = document.getElementById("nama");
+        let e= document.getElementById("email");
+        let j = document.getElementById("jam");
+        let t = document.getElementById("tujuan");
+        let p = document.getElementById("tiket");
+        let sub = document.getElementById("sub");
+
+        function data (){
+            document.getElementById("h_nama").innerHTML = "Nama : " + n.value;
+            document.getElementById("h_email").innerHTML = "Email : " + e.value;
+            document.getElementById("h_jam").innerHTML = "Jam Keberangkatan : " + j.value;
+            document.getElementById("h_tujuan").innerHTML = "Tujuan Keberangkatan : " + t.value;
+            document.getElementById("h_tiket").innerHTML = "Jumlah Tiket : " + p.value;
+    }
+    </script>
+</body>
+</html>
