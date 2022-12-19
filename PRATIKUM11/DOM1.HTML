@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSES ELEMENT</title>
+</head>
+<body>
+    <h1>belajar dom javascript</h1>
+
+    <div id="box1"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>javascript</li>
+    </ul>
+
+    <SCript>
+        //akses elemen dengan id
+       // document.getElementById("box1").innerHTML ="praktikum web";
+        //simpan askes ke dalam  variabel
+        let box1 = document.getElementById("box1");
+        box1.innerHTML ="praktikum web";
+
+        //mengakses elemen dengan class 
+
+       let boxes = document.getElementsByClassName("boxes");
+       boxes[0].innerHTML ="basic";
+       boxes[1].innerHTML ="advanced";
+       boxes[2].innerHTML ="expert";
+
+    //aksea element dengan tag
+    let list = document.getElementsByTagName ("li");
+    list[0].innerHTML ="python";
+    list[1].innerHTML ="php";
+    list[2].innerHTML ="java";
+
+
+
+    </SCript>
+</body>
+</html>

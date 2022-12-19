@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>silakan klik tombol untuk ubah mode gelap</h>
+        <br>
+        <button>ubah </button>
+
+        <script>
+        let btn= document.querySelector("button");
+        let body = document.querySelector("body");
+        let drakmode = true;
+
+        btn.addEventListener("click", function(){
+            if (drakmode == true ) {
+                body.style.backgroundColor = "black";
+                body.style.color ="white";
+                btn.innerHTML ="mode terang";
+                drakmode = false;
+
+            }else {
+                body.style.backgroundColor = "white";
+                body.style.color ="black";
+                btn.innerHTML ="mode gelap";
+                drakmode = true;
+
+            }
+        })
+        </script>
+</body>
+</html>
